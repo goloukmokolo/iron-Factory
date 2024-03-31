@@ -3,7 +3,7 @@ computer=require'computer'
 component=require'component'
 r=component.redstone
 -----------
-local S=0
+local S=1
 local e=computer.energy()
 local mE=computer.maxEnergy()
 
@@ -15,6 +15,15 @@ function razr()
    S=1
 end
 
+function find(a)
+  s=1
+  while inv.getStackInSlot(1).name~=a do
+    print(inv.getStackInSlot(1).name)
+    robot.select(s)
+    s=s+1
+    if s>16 do s=0 end
+  end 
+end 
 function error()
 
 end
@@ -32,7 +41,7 @@ while true do
       razr()
     end  
     if S==1 then
-
+      find("minecraft:cobblestone")
     end  
     if S==2 then
 
@@ -40,5 +49,4 @@ while true do
     if S==3 then
 
     end  
-end
-  
+  end 
