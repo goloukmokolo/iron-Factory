@@ -24,24 +24,27 @@ function find(a)
     if s>16 do s=0 end
   end 
 end 
+
 function error()
 
 end
 
-function load()
+-- function load()
+--     robot.suck()
+-- end
 
-end
-
-function unload()
-
-end
+-- function unload()
+--     find(a)  
+--     robot.drop(b)
+-- end
 
 while true do 
     if S==0 then
       razr()
     end  
     if S==1 then
-      find("minecraft:cobblestone")
+      -- load()
+      -- unload("minecraft:coal",64)
     end  
     if S==2 then
 
