@@ -30,13 +30,20 @@ function error()
 end
 
 -- function load()
+function load()
 --     robot.suck()
+robot.suck()
 -- end
+end
 
 -- function unload()
---     find(a)  
+function unload()
+--     find(a)
+find(a)  
 --     robot.drop(b)
+robot.drop(b)
 -- end
+end
 
 while true do 
     if S==0 then
@@ -44,7 +51,9 @@ while true do
     end  
     if S==1 then
       -- load()
+      load()
       -- unload("minecraft:coal",64)
+      unload("minecraft:coal" ,64)
     end  
     if S==2 then
 
