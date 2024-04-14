@@ -25,35 +25,51 @@ function find(a)
   end 
 end 
 
-function error()
-
-end
-
--- function load()
 function load()
---     robot.suck()
-robot.suck()
--- end
+    robot.suck()
 end
 
--- function unload()
 function unload()
---     find(a)
-find(a)  
---     robot.drop(b)
-robot.drop(b)
--- end
+  find(a)  
+  robot.drop(b)
 end
+
+function zagr()
+  -- while robot.count()==0 do end
+
+  -- robot.suck()
+
+  -- pech=4
+
+  -- part=robot.count()/pech
+
+  -- robst.turnAround()
+
+  -- for a=1,pech do 
+
+  --   robot.forward()
+
+  --   robot.dropDown(part)
+
+  -- end
+
+  -- robot.turnAround()
+
+  -- for a=1,pech do 
+
+  --   robot.forward()
+
+  -- end
+  
+end
+
 
 while true do 
     if S==0 then
       razr()
     end  
     if S==1 then
-      -- load()
-      load()
-      -- unload("minecraft:coal",64)
-      unload("minecraft:coal" ,64)
+      --zagr()
     end  
     if S==2 then
 
