@@ -36,31 +36,31 @@ end
 
 function zagr()
   -- while robot.count()==0 do end
-
+while robot.count()==0 do end 
   -- robot.suck()
-
+robot.suck()
   -- pech=4
-
+pech=4
   -- part=robot.count()/pech
-
+part=robot.count()/pech 
   -- robst.turnAround()
-
+robst.turnAround()
   -- for a=1,pech do 
-
+for a=1,pech do 
   --   robot.forward()
-
+robot.forward()
   --   robot.dropDown(part)
-
+robot.dropDown(part)
   -- end
-
+end
   -- robot.turnAround()
-
+robot.turnAround()
   -- for a=1,pech do 
-
+for a=1,pech do 
   --   robot.forward()
-
+robot.forward()
   -- end
-  
+end
 end
 
 
@@ -70,6 +70,7 @@ while true do
     end  
     if S==1 then
       --zagr()
+      zagr()
     end  
     if S==2 then
 
